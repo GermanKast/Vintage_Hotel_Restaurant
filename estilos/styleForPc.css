@@ -1,0 +1,616 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body
+    {
+        margin: 0 auto;
+        text-align: center;
+        background-color: #f6f6f6;
+    }
+
+    header, #divHeaderGeneral, #divGeneral, footer,
+    #divHeaderCafe, #divHeaderContInterno, #divGaleria
+    {
+        width: 1275px;
+    }
+
+    /********************************************************************************************************************/
+    /************************************************  encabezado estatico *********************************************/
+    /********************************************************************************************************************/
+
+    #divHeaderGeneral
+    {
+        width: 100%;
+        height: 150px;
+        background-color: #f6f6f6;
+        position:fixed; /* no se mueve cuando se hace scroll*/
+        top: 0;/*posicion superior*/
+        right: 0;
+        z-index: 99;/*se muestra encima de todos los demas tags*/
+        margin: 0 auto;
+    }
+
+    #divHeaderCafe
+    {
+        width: 100%;
+        background-color: #58453f;
+        height: 30px;
+    }
+
+    #divHeaderContInterno
+    {
+        height: 120px;
+        width: 1349px;
+    }
+
+    #divHeaderLogo
+    {
+        width: 500px;
+        height: 100%;
+        float: left;
+        background-image: url("../images/logo/logo.png");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #divHeaderNav
+    {
+        width: 700px;
+        height: 100%;
+        float: right;
+    }
+
+    #navHeader
+    {
+        width: 100%;
+        height: 100%;
+        padding-top: 45px;
+    }
+
+    a
+    {
+        text-decoration: none;
+        font-family: NewOpenSans;
+        color: gray;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding-right: 15px;
+        font-size: 1.1em;
+    }
+
+    a:hover
+    {
+        text-decoration: none;
+        color: black;
+    }
+
+    .aEndLine
+    {
+        border-right: 1px solid gray;
+    }
+
+    /********************************************************************************************************************/
+    /********************************************  fin encabezado esstatico *********************************************/
+    /********************************************************************************************************************/
+    
+    /************************************************************************************************************************/
+    /********************************************  diseño interior del body *************************************************/
+    /************************************************************************************************************************/
+
+    /********************************************************************************************************************/
+    /*********************************************  animacion slideshow *************************************************/
+    /********************************************************************************************************************/
+
+    #divGeneral
+    {
+        margin: 0 auto;
+        margin-top: 150px;
+        height: 1490px;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    #divSlideShow
+    {
+        height: 400px;
+        width: 100%;
+    }
+
+    /*contenedor general*/
+    #slider-container {
+        height: 400px;
+        margin: 0 auto;
+        overflow: hidden;
+        text-align: left;
+        width: 100%;
+    }
+
+    /*caja donde se visualizaran las imagenes*/
+    #slider-box {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        margin-left: 0%;
+    }
+
+    .slider-element
+    {
+        float: left;
+        width: 50%;
+        position: absolute;
+    }
+
+    #divElement1,
+    #divElement2,
+    #divElement3,
+    #divElement4 {
+        min-height: 400px;
+        max-height: 100%;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    #divElement1 {
+        background-image: url("../images/slide/1.jpg");
+        animation-name: autoSliderA;
+        animation-duration: 7s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-direction: normal;
+        animation-iteration-count: infinite;
+        animation-fill-mode: none;
+        animation-play-state: running;
+    }
+
+    #divElement2 {
+        background-image: url("../images/slide/2.jpg");
+        animation-name: autoSliderB;
+        animation-duration: 7s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-direction: normal;
+        animation-iteration-count: infinite;
+        animation-fill-mode: none;
+        animation-play-state: running;
+    }   
+
+    #divElement3 {
+        background-image: url("../images/slide/3.jpg");
+        animation-name: autoSliderC;
+        animation-duration: 7s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-direction: normal;
+        animation-iteration-count: infinite;
+        animation-fill-mode: none;
+        animation-play-state: running;
+    }
+
+    #divElement4 {
+        background-image: url("../images/slide/4.jpg");
+        animation-name: autoSliderD;
+        animation-duration: 7s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-direction: normal;
+        animation-iteration-count: infinite;
+        animation-fill-mode: none;
+        animation-play-state: running;
+    }
+
+    /*********************************************************************************************************************************/
+    #divElement1:hover, #divElement2:hover, #divElement3:hover, #divElement4:hover
+    {
+        animation-name: autoSliderHover;
+        animation-duration: 7s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-direction: normal;
+        animation-iteration-count: infinite;
+        animation-fill-mode: none;
+        animation-play-state: running;
+        width: 100%;
+        height: 100%;
+        z-index: 1;/*se muestra encima de todos los demas tags*/
+    }
+
+    /*********************************************** autoSliderA ********************************************************************/
+    @font-face {
+        font-family: 'NewOpenSans';
+        src: url("../font/OpenSans-Regular.ttf") format('truetype');
+    }
+
+    /*********************************************** autoSliderA ********************************************************************/
+    
+    /*---------------------- prueba ----------------------------*/
+    @keyframes autoSliderHover {
+        0% {
+            margin-left: 0;
+        }
+
+        50% {
+            margin-left: 0;
+        }
+
+        100% {
+            margin-left: 0;
+        }
+    }
+    /*---------------------- prueba ---------------------------*/
+
+
+    @keyframes autoSliderA {
+        0% {
+            margin-left: 0;
+        }
+
+        50% {
+            margin-left: -25%;
+        }
+
+        100% {
+            margin-left: 0;
+        }
+    }
+
+    /*********************************************** autoSliderB ********************************************************************/
+
+    @keyframes autoSliderB {
+        0% {
+            margin-left: 15%;
+        }
+        
+        25% {
+            margin-left: 0;
+        }
+
+        50% {
+            margin-left: 15%;
+        }
+
+        75% {
+            margin-left: 25%;
+        }
+
+        100% {
+            margin-left: 15%;
+        }
+    }
+
+    /*********************************************** autoSliderC ********************************************************************/
+    @keyframes autoSliderC {
+        0% {
+            margin-left: 30%;
+        }
+        
+        40% {
+            margin-left: 50%;
+        }
+
+        90% {
+            margin-left: 25%;
+        }
+
+        100% {
+            margin-left: 30%;
+        }
+    }
+
+    /*********************************************** autoSliderD ********************************************************************/
+    @keyframes autoSliderD {
+        0% {
+            margin-left: 75%;
+        }
+        
+        50% {
+            margin-left: 50%;
+        }
+
+        100% {
+            margin-left: 75%;
+        }
+    }
+
+
+    /************************************************************************************************************************/
+    /*********************************************  fin animacion slideshow *************************************************/
+    /************************************************************************************************************************/
+
+    /************************************************************************************************************************/
+    /***********************************************  diseño habitaciones  **************************************************/
+    /************************************************************************************************************************/
+
+    #pic1:hover, #pic2:hover, #pic3:hover{
+        -webkit-filter: grayscale(90%);
+        -webkit-filter: brightness(120%);
+    }
+
+     div{
+        font-family: NewOpenSans;
+
+     }
+
+    #divHabitaciones
+    {
+        margin-top: 30px;
+        padding-top: 30px;
+        width: 100%;
+        height: 610px;
+    }
+
+    #divContImagenes
+    {
+        width: 95%;
+        height: 55%;
+        margin: 0 auto;
+    }
+
+    #divImg1, #divImg2, #divImg3
+    {
+        width: 33.333%;
+        height: 350px;
+        float: left;
+    }
+
+    .imgHabit
+    {
+        margin: 0 auto;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .titRoom
+    {
+        display: inline-block;
+        float: left;
+    }
+
+    #tit1, #tit2, #tit3
+    {
+        margin-top: 30px;
+        margin-left: 17px;
+        font-size: 1.7em;
+    }
+
+    #tit3
+    {
+        margin-left: 100px;
+    }
+
+    #divReservHabit
+    {
+        width: 100%;
+        height: 35%;
+        background-color: #ffffff;
+        display: inline-block;
+        padding-top: 60px;
+    }
+
+    #divReservHabitText
+    {
+        width: 70%;
+        height: 65%;
+        float: left;
+        color: gray;
+        padding-left: 80px;
+    }
+
+    #divReservHabitBoton
+    {
+        width: 30%;
+        height: 65%;
+        float: left;
+    }
+
+    #pReservHabit
+    {
+        font-size: 0.9em;
+    }
+
+    #tit4
+    {
+        font-size: 1.7em;
+    }
+
+    .ReservHabitText
+    {
+        float: left;
+    }
+
+    #botonReserv
+    {
+        background-color: #dbbc86;
+        border: 0;
+        color: white;
+        width: 80%;
+        height: 40px;
+        font-size: 1.3em;
+        margin-top: 8px;
+        transition: background-color 1s;
+    }
+
+    #botonReserv:hover
+    {
+        background-color: #c7a569;
+    }
+
+    /************************************************************************************************************************/
+    /*********************************************  fin diseño habitaciones  ************************************************/
+    /************************************************************************************************************************/
+    
+    /************************************************************************************************************************/
+    /**************************************************  diseño galeria  ****************************************************/
+    /************************************************************************************************************************/
+
+    #divGaleria
+    {
+        height: 450px;
+        background-color: #ffffff;
+    }
+    
+        #divTit5
+        {
+            width: 1275px;
+            height: 80px;
+            padding-top: 20px;
+        }
+
+            #titGaleria
+            {
+                margin: 0 auto;
+                font-size: 1.7em;
+            }
+        
+        #divGaleriaBox
+        {
+            width: 1270px;
+            height: 300px;
+            margin: 0 auto;
+        }
+
+            #divGaleriaSlider
+            {
+                z-index: 10;
+                padding-top: 40px;
+                float: left;
+                height: 300px;
+                width: 1140px;
+                position: absolute;
+                overflow: hidden;
+                margin-left: 63px;
+            }
+            
+                #divGaleriaSlider2
+                {
+                    width: 6000px;
+                    height: 100%;
+                    margin-left: -2960px;
+                    transition: margin-left 3s;
+                    position: absolute;
+                }
+
+                    .imgGaleria
+                    {
+                        margin-left: 30px;
+                        margin-bottom: 40px;
+                        float: left;
+                    }
+
+            #divFlechaIzq, #divFlechaDer
+            {
+                padding-top: 130px;
+                float: left;
+                color: red;
+                height: 300px;
+                width: 5%;
+                font-size: 2em;
+                z-index: 80;
+                background-color: white;
+            }
+                #divFlechaDer
+                {
+                    position: relative;
+                    margin-left: 1141px;
+                }
+
+                #divFlechaIzq:hover ~ #divGaleriaSlider #divGaleriaSlider2
+                {
+                    margin-left: -4815px;
+                }
+
+
+                #divFlechaDer:hover ~ #divGaleriaSlider #divGaleriaSlider2
+                {
+                    margin-left: 0px;
+                }
+
+    /************************************************************************************************************************/
+    /***********************************************  fin diseño galeria  ***************************************************/
+    /************************************************************************************************************************/
+
+    /************************************************************************************************************************/
+    /******************************************  fin diseño interior del body ***********************************************/
+    /************************************************************************************************************************/
+
+    footer
+    {
+        /*
+        background: -webkit-linear-gradient(rgb(8,6,5), rgb(49,39,35));
+        background: -moz-linear-gradient(rgb(8,6,5), rgb(49,39,35));
+        background: -o-linear-gradient(rgb(8,6,5), rgb(49,39,35));
+        background: -ms-linear-gradient(rgb(8,6,5), rgb(49,39,35));
+        */
+        background: linear-gradient(rgb(8,6,5), rgb(49,39,35));
+        margin: 0 auto;
+    }
+
+    #divFooter
+    {
+        height: 600px;
+        width: 890px;
+        margin: 0 auto;
+        padding-top: 80px;
+        color: #aab8b9;
+    }
+
+    #titFooter
+    {
+        text-align: left;
+        margin-left: 30px;
+        font-size: 2em;
+    }
+
+    #divInputSet1, #divInputSet2
+    {
+        margin: 0 auto;
+        width: 95%;
+        height: 123px;
+    }
+
+    .inputTestForm, #inputTextArea
+    {
+        width: 400px;
+        height: 40px;
+        float: left;
+        border-radius: 7px;
+        margin: 10px;
+        padding-left: 5px;
+        font-family: "Times New Roman", Times, serif;
+        background-color: #aab8b9;
+        border: 0;
+        color: gray;
+    }
+
+     #divInputSet2
+     {
+        height: 270px;
+     }
+
+    #inputSub
+    {
+        background-color: #882714;
+        border: 0;
+        color: #aab8b9;
+        font-family: cursive;
+        font-size: 1em;
+        width: 130px;
+        height: 40px;
+        float: left;
+        border-radius: 7px;
+        margin: 10px;
+        margin-top: 0;
+    }
+
+    #inputTextArea
+    {
+        height: 70%;
+        width: 97%;
+    }
+
+
+

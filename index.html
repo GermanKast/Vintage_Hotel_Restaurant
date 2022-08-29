@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" media="(min-width: 320px)" href="estilos/styleForPc.css">
+    <link rel="stylesheet" media="(max-width: 320px)" href="estilos/styleForMovil.css"/>
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/prefix-free.js"></script>
+	<script src="js/scroll.js"></script>
+</head>
+
+<body>
+<header>
+    <div id="divHeaderGeneral">
+        <div id="divHeaderCafe">
+        </div>
+        <div id="divHeaderContInterno">
+            <div id="divHeaderLogo">
+            </div>
+            <div id="divHeaderNav">
+                <nav id="navHeader">
+                    <a class="aEndLine" href="#divSlideShow">HOME</a>
+                    <a class="aEndLine" href="#divHabitaciones">RESERVATION</a>
+                    <a class="aEndLine" href="#divGaleria">GALLERY</a>
+                    <a id="aContacto" href="#divFooter">CONTACT</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+    <div id="divGeneral">
+        <div id="divSlideShow">
+            <div id="slider-container">
+                <div id="slider-box">
+                    <div class="slider-element" id="divElement1"></div>
+                    <div class="slider-element" id="divElement2"></div>
+                    <div class="slider-element" id="divElement3"></div>
+                    <div class="slider-element" id="divElement4"></div>
+                </div>
+            </div>   
+        </div>
+        <div id="divHabitaciones">
+            <div id="divContImagenes">
+                <div id="divImg1">
+                    <img class="imgHabit" SRC="images/reservation/pic1.jpg" id="pic1" alt=""> 
+                    <h3 class="titRoom" id="tit1">ROOM WITH ONE BEDROOM</h3>
+                </div>
+                <div id="divImg2">
+                    <img class="imgHabit" SRC="images/reservation/pic2.jpg" id="pic2" alt="">
+                    <h3 class="titRoom" id="tit2"> ROOM WITH TWO BEDROOM</h3>
+                </div>
+                <div id="divImg3">
+                    <img class="imgHabit" SRC="images/reservation/pic3.jpg" id="pic3" alt="">
+                    <h3 class="titRoom" id="tit3">KING SIZE BEDROOM</h3>
+                </div>
+            </div>
+            <div id="divReservHabit">
+                <div id="divReservHabitText">
+                    <h3 class="ReservHabitText" id="tit4">CALL US +1 2547 487 8974 OR MADE RESERVATION RIGHT NOW!</h3> 
+                    <p class="ReservHabitText" id="pReservHabit">vestibulum eu euismod quam nullam at accumsan orci aenean ullamcorper nulla ut saplen ultrices dignissim</p>
+                </div>
+                <div id="divReservHabitBoton">
+                    <button id="botonReserv">ONLINE RESERVATION </button>
+                </div>
+            </div> 
+        </div>
+        <div id="divGaleria">
+            <div id="divTit5">
+                <h3 id="titGaleria">OUR GALERY</h3>
+            </div>
+            <div id="divGaleriaBox">
+                <div id="divFlechaIzq">&#60;</div>
+                <div id="divFlechaDer">&#62;</div>
+                <div id="divGaleriaSlider">
+                    <div id="divGaleriaSlider2">
+                        <img src="images/gallery/g1.jpg" alt="" class="imgGaleria">
+                        <img src="images/gallery/g2.jpg" alt="" class="imgGaleria">
+                        <img src="images/gallery/g3.jpg" alt="" class="imgGaleria">
+                        <img src="images/gallery/g4.jpg" alt="" class="imgGaleria">
+                        <img src="images/gallery/g5.jpg" alt="" class="imgGaleria">
+                        <img src="images/gallery/g6.jpg" alt="" class="imgGaleria">
+                        <img src="images/gallery/g7.jpg" alt="" class="imgGaleria">
+                        <img src="images/gallery/g8.jpg" alt="" class="imgGaleria">
+                        <img src="images/gallery/g1.jpg" alt="" class="imgGaleria" id="imgGaleriaHide">
+                        <img src="images/gallery/g2.jpg" alt="" class="imgGaleria" id="imgGaleriaHide1">
+                        <img src="images/gallery/g3.jpg" alt="" class="imgGaleria" id="imgGaleriaHide2">
+                        <img src="images/gallery/g4.jpg" alt="" class="imgGaleria" id="imgGaleriaHide3">
+                        <img src="images/gallery/g5.jpg" alt="" class="imgGaleria" id="imgGaleriaHide4">
+                        <img src="images/gallery/g6.jpg" alt="" class="imgGaleria" id="imgGaleriaHide5">
+                        <img src="images/gallery/g7.jpg" alt="" class="imgGaleria" id="imgGaleriaHide6">
+                        <img src="images/gallery/g8.jpg" alt="" class="imgGaleria" id="imgGaleriaHide7">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+    <div id="divFooter">
+        <h3 id="titFooter">OUR ADDRESS</h3>
+        <div id="divInputSet1">
+            <input class="inputTestForm" type="text" value="Your Name">
+            <input class="inputTestForm" type="text" value="Your E-mail">
+            <input class="inputTestForm" type="text" value="Your Company">
+            <input class="inputTestForm" type="text" value="Your Website">
+        </div>
+        <div id="divInputSet2">
+        <textarea name="Tina" id="inputTextArea" cols="30" rows="10"></textarea>
+            <input id="inputSub" type="submit" value="Send Message">
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

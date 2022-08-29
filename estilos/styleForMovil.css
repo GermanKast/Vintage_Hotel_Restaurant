@@ -1,0 +1,378 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body
+    {
+        margin: 0 auto;
+        text-align: center;
+        background-color: #f6f6f6;
+    }
+
+    header, #divHeaderGeneral, #divGeneral, footer,
+    #divHeaderCafe, #divHeaderContInterno
+    {
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    /********************************************************************************************************************/
+    /************************************************  encabezado estatico *********************************************/
+    /********************************************************************************************************************/
+
+    #divHeaderGeneral
+    {
+        height: 100px;
+        background-color: #f6f6f6;
+        position:fixed; /* no se mueve cuando se hace scroll*/
+        right: 0;/*posicion derecha */
+        top: 0;/*posicion superior*/
+        z-index: 99;/*se muestra encima de todos los demas tags*/
+        margin: 0 auto;
+    }
+
+        #divHeaderCafe
+        {
+            background-color: #58453f;
+            height: 5px;
+        }
+
+        #divHeaderContInterno
+        {
+            height: 100px;
+        }
+
+            #divHeaderLogo
+            {
+                width: 320px;
+                height: 69px;
+                background-image: url("../images/logo/logo.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 50% 100%;
+            }
+
+            #divHeaderNav
+            {
+                width: 330px;
+                height: 32px;
+            }
+
+                #navHeader
+                {
+                    width: 320px;
+                    height:32px;
+                    padding-left: 15px;
+                    padding-top: 0;
+                }
+
+                    a
+                    {
+                        text-decoration: none;
+                        font-family: NewOpenSans;
+                        font-size: 0.8em;
+                        color: gray;
+                        margin: 0;
+                    }
+
+                    a:hover
+                    {
+                        text-decoration: none;
+                        color: black;
+                    }
+
+                    .aEndLine
+                    {
+                        border-right: 1px solid gray;
+                    }
+
+                    #aContacto
+                    {
+                        padding-right: 0;
+                    }
+
+    /********************************************************************************************************************/
+    /********************************************  fin encabezado esstatico *********************************************/
+    /********************************************************************************************************************/
+
+    /********************************************************************************************************************/
+    /*********************************************  animacion slideshow *************************************************/
+    /********************************************************************************************************************/
+
+    #divGeneral
+    {
+        margin-top: 87px;
+        height: 1540px;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    #divSlideShow
+    {
+        display: none;
+    }
+
+
+    /************************************************************************************************************************/
+    /********************************************  diseño interior del body *************************************************/
+    /************************************************************************************************************************/
+
+
+
+    /************************************************************************************************************************/
+    /***********************************************  diseño habitaciones  **************************************************/
+    /************************************************************************************************************************/
+
+    #pic1:hover, #pic2:hover, #pic3:hover{
+        -webkit-filter: grayscale(90%);
+        -webkit-filter: brightness(120%);
+    }
+
+     div{
+        font-family: NewOpenSans;
+
+     }
+    button {
+        width: 190px;
+        color: #E56518;
+    }
+
+    #divHabitaciones
+    {
+        margin-top: 30px;
+        padding-top: 20px;
+        width: 100%;
+        height: 1040px;
+    }
+
+    #divContImagenes
+    {
+        width: 100%;
+        height: 800px;
+        margin: 0 auto;
+    }
+
+    #divImg1, #divImg2, #divImg3
+    {
+        width: 100%;
+        height: 260px;
+        margin: 0 auto;
+        margin-bottom: 5px;
+        padding: 0;
+    }
+    
+    .imgHabit
+    {
+        margin: 0 auto;
+        width: 310px;
+        height: 230px;
+    }
+
+    .titRoom
+    {
+        display: inline-block;
+        float: left;
+    }
+
+    #tit1, #tit2, #tit3
+    {
+        margin: 0;
+        margin-left: 60px;
+        font-size: 0.8em;
+    }
+
+    #tit3
+    {
+        margin-left: 100px;
+    }
+
+    #divReservHabit
+    {
+        width: 100%;
+        height: 200px;
+        background-color: #ffffff;
+        display: inline-block;
+        padding: 5px;
+        padding-top: 15px;
+    }
+
+    #divReservHabitText
+    {
+        width: 100%;
+        height: 120px;
+        float: left;
+        color: gray;
+        padding: 0;
+    }
+
+    #divReservHabitBoton
+    {
+        width: 100%;
+        height: 40px;
+        float: left;
+    }
+
+    #pReservHabit
+    {
+        font-size: 0.9em;
+    }
+
+    #tit4
+    {
+        font-size: 1em;
+    }
+
+    .ReservHabitText
+    {
+        float: left;
+    }
+
+    #botonReserv
+    {
+        background-color: #dbbc86;
+        border: 0;
+        color: white;
+        width: 80%;
+        height: 38px;
+        font-size: 1.3em;
+        margin: 0 auto;
+        transition: background-color 0.5s;
+    }
+
+    #botonReserv:hover
+    {
+        background-color: #c7a569;
+    }
+
+    /************************************************************************************************************************/
+    /*********************************************  fin diseño habitaciones  ************************************************/
+    /************************************************************************************************************************/
+
+
+    #divGaleria
+    {
+        width: 100%;
+        height: 500px;
+        background-color: #ffffff;
+    }
+
+    #divGaleriaBox, #divGaleriaSlider, #divGaleriaSlider2
+    {
+        width: 310px;
+        height: 470px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    #divTit5
+    {
+        width: 100%;
+        height: 25px;
+        padding: 0px;
+    }
+    
+    #titGaleria
+    {
+        font-size: 1em;
+    }
+    
+    .imgGaleria
+    {
+        width: 130px;
+        height: 100px;
+        float: left;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+
+    #divFlechaIzq, #divFlechaDer, #imgGaleriaHide, #imgGaleriaHide1, #imgGaleriaHide2, #imgGaleriaHide3, #imgGaleriaHide4, #imgGaleriaHide5, #imgGaleriaHide6, #imgGaleriaHide7
+    {
+        display: none;
+    }
+
+    /************************************************************************************************************************/
+    /******************************************  fin diseño interior del body ***********************************************/
+    /************************************************************************************************************************/
+
+    footer
+    {
+        /*
+        background: -webkit-linear-gradient(rgb(8,6,5), rgb(49,39,35));
+        background: -moz-linear-gradient(rgb(8,6,5), rgb(49,39,35));
+        background: -o-linear-gradient(rgb(8,6,5), rgb(49,39,35));
+        background: -ms-linear-gradient(rgb(8,6,5), rgb(49,39,35));
+        */
+        background: linear-gradient(rgb(8,6,5), rgb(49,39,35));
+    }
+
+    #divFooter
+    {
+        height: 600px;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 30px;
+        color: #aab8b9;
+    }
+
+    #titFooter
+    {
+        text-align: center;
+        margin: 0 auto;
+        font-size: 1em;
+    }
+
+    #divInputSet1, #divInputSet2
+    {
+        margin: 0 auto;
+        padding-left: 7px;
+        width: 100%;
+        height: 250px;
+    }
+
+    .inputTestForm, #inputTextArea
+    {
+        width: 90%;
+        height: 40px;
+        border-radius: 7px;
+        margin: 10px;
+        padding-left: 5px;
+        font-family: "Times New Roman", Times, serif;
+        background-color: #aab8b9;
+        border: 0;
+        color: gray;
+    }
+
+     #divInputSet2
+     {
+        height: 270px;
+     }
+
+    #inputSub
+    {
+        background-color: #882714;
+        border: 0;
+        color: #aab8b9;
+        font-family: cursive;
+        font-size: 1em;
+        width: 130px;
+        height: 40px;
+        float: left;
+        border-radius: 7px;
+        margin: 10px;
+        margin-top: 0;
+        margin-left: 85px;
+    }
+
+    #inputTextArea
+    {
+        height: 70%;
+    }
+
+    
+
